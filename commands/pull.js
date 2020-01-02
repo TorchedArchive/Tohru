@@ -11,15 +11,11 @@ exports.run = (tohru, msg) => {
 		}
 		msg.channel.createMessage({embed: {
 			color: 0xFAB41D,
-			description: "☁️ Here's your output!",
+			description: "☁️ Here you go, master!",
 			fields: [
 				{
-					"name": "Stdout:",
-					"value": `\`\`\`bash\n${out}\`\`\``
-				},
-				{
-					"name": "Stderr:",
-					"value": `\`\`\`bash\n${stderr}\`\`\``
+					"name": "Output:",
+					"value": `\`\`\`bash\n${out || stderr}\`\`\``
 				}
 			]
 		}})
