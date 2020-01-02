@@ -14,6 +14,10 @@ module.exports = (tohru, msg) => {
     const args = msg.content.slice(prefix.length).trim().split(" ")
     const command = args.shift().toLowerCase()
     try {
+        if((tohru.commands.has(command).config.ownerOnly || tohru.commands.get(tohru.aliases.get(command)).config.ownerOnly) && msg.author.id !== "439373663905513473") {
+            msg.channel.createMessage("☁️ Only my master can use this command.")
+            return;
+        }
         let cmd;
         if(tohru.commands.has(command)) {
             cmd = tohru.commands.get(command)
