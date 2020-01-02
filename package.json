@@ -1,0 +1,32 @@
+{
+  "name": "tohru",
+  "version": "1.0.0",
+  "description": "The greatest and most epic weeb bot ever!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuraiStacks/Tohru.git"
+  },
+  "keywords": [
+    "discord-bot",
+    "bot",
+    "anime",
+    "weeb",
+    "eris"
+  ],
+  "author": "SamuraiStacks",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SamuraiStacks/Tohru/issues"
+  },
+  "homepage": "https://github.com/SamuraiStacks/Tohru#readme",
+  "dependencies": {
+    "cat-loggr": "^1.0.17",
+    "eris": "^0.10.1",
+    "jikan-node": "^1.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
