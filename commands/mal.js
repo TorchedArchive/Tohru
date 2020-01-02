@@ -1,11 +1,11 @@
-exports.run = (tohru, msg, args) => {
+exports.run = async(tohru, msg, args) => {
     const Jikan = require("jikan-node");
     const mal = new Jikan();
 
+    const m = await msg.channel.createMessage("☁️ Finding profile...")
     mal.findUser(args[0])
     .then(i => {
-        console.log(i)
-        msg.channel.createMessage({embed: {
+        m.edit({content: "", embed: {
             color: 0xFAB41D,
             author: {
                 name: "Tohru - MyAnimeList",
@@ -54,7 +54,12 @@ exports.run = (tohru, msg, args) => {
             }
         }})
     })
-    .catch(e => console.log(e))
+    .catch(e => {
+        m.edit({content: "", embed: {
+            color: 0xff0000,
+            description: "☁️ An error has occurred! Are you sure you typed the right username?"
+        }})
+    })
 }
 
 exports.config = {
