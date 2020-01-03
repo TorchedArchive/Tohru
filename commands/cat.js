@@ -3,7 +3,7 @@ exports.run = (tohru, msg) => {
 	fetch("http://aws.random.cat/meow").then(r => r.json())
 	.then(i => {
 		msg.channel.createMessage({embed: {
-			color: 0x0,
+			color: 0xFAB41D,
 			description: ">w< a cat!!",
 			image: {
 				url: i.file

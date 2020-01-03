@@ -1,7 +1,8 @@
 exports.run = (tohru, msg, args) => {
+	let result;
     try {
  		const code = args.join(" ");
-      	let result = eval(code);
+      	result = eval(code);
  
       	if (typeof result !== "string") return result = require("util").inspect(evaled);
  
@@ -10,14 +11,12 @@ exports.run = (tohru, msg, args) => {
     	result = err;
 	}
 	msg.channel.createMessage({embed: {
-		color: 0x0,
+		color: 0xFAB41D,
 		description: "☁️ Here are your results master!",
 		fields: [
 			{
 				"name": "Output",
-				"value": `\`\`\`js
-						  ${result}
-						  \`\`\``
+				"value": `\`\`\`js\n${result}\n\`\`\``
 			}
 		]
 	}})
