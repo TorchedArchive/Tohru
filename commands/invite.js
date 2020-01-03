@@ -6,7 +6,7 @@ exports.run = (tohru, msg) => {
             icon_url: tohru.user.avatarURL
         },
         description: "❤ Please invite me to your server senpai~! [Be sure to click here](https://discordapp.com/oauth2/authorize?client_id=661376824328323072&scope=bot&permissions=104193089)" +
-                     "\n⛑ And you can join my server to talk to my dad! [Support server!](https://discord.gg/GPYMkzX)"
+                     "\n⛑ And you can join my server to talk to my master! [Support server!](https://discord.gg/GPYMkzX)"
     }})
 }
 

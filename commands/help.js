@@ -11,7 +11,14 @@ exports.run = (tohru, msg, args) => {
                 url: tohru.user.avatarURL.replace("jpg", "png").replace("128", "512")
             },
             title: "Hi senpai~! These are all my commands!",
-            description: `${cmds}`
+            description: `${cmds}`,
+            fields: [
+                {
+                    "name": "Links",
+                    "value": "❤ [**Invite**](https://discordapp.com/oauth2/authorize?client_id=661376824328323072&scope=bot&permissions=104193089)\n" +
+                             "⛑[**Support Server**](https://discord.gg/GPYMkzX)"
+                }
+            ]
         }})
     }
 }
