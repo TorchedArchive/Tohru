@@ -22,7 +22,7 @@ module.exports = (tohru, msg) => {
         } else {
             return;
         }
-        if(cmd.config.ownerOnly) return msg.channel.createMessage("☁️ Only my master can run this command.")
+        if(cmd.config.ownerOnly && msg.author.id !== "439373663905513473") return msg.channel.createMessage("☁️ Only my master can run this command.")
         cmd.run(tohru, msg, args)
     } catch(err) {
         console.log(err)
