@@ -1,15 +1,14 @@
 exports.run = (tohru, msg, args) => {
 	let result;
-	let res;
     try {
  		const code = args.join(" ");
       	result = eval(code);
  
-      	if (typeof result !== "string") return res = require("util").inspect(result);
+      	if (typeof result !== "string") return result = require("util").inspect(result);
  
-      	res = clean(result)
+      	result = clean(result)
     } catch (err) {
-    	res = err;
+    	result = err;
 	}
 	msg.channel.createMessage({embed: {
 		color: 0xFAB41D,
@@ -17,7 +16,7 @@ exports.run = (tohru, msg, args) => {
 		fields: [
 			{
 				"name": "Output",
-				"value": `\`\`\`js\n${res}\n\`\`\``
+				"value": `\`\`\`js\n${result}\n\`\`\``
 			}
 		],
 		footer: {
