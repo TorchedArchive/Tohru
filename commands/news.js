@@ -8,7 +8,7 @@ exports.run = (tohru, msg, args) => {
 				name: "Tohru - News",
 				icon_url: tohru.user.avatarURL
 			},
-			description: "These are my latest changes!\n\n" +
+			description: "These are my latest changes and/or newest information!\n\n" +
 						 `\`${news.toString()}\``,
 
             footer: {
