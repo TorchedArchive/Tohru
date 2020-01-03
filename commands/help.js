@@ -15,8 +15,8 @@ exports.run = (tohru, msg, args) => {
             fields: [
                 {
                     "name": "Links",
-                    "value": "❤ [**Invite**](https://discordapp.com/oauth2/authorize?client_id=661376824328323072&scope=bot&permissions=104193089)\n" +
-                             "⛑[**Support Server**](https://discord.gg/GPYMkzX)"
+                    "value": "[**Invite**](https://discordapp.com/oauth2/authorize?client_id=661376824328323072&scope=bot&permissions=104193089) ❤\n" +
+                             "[**Support Server**](https://discord.gg/GPYMkzX) ⛑"
                 }
             ]
         }})
