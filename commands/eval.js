@@ -4,7 +4,7 @@ exports.run = (tohru, msg, args) => {
  		const code = args.join(" ");
       	result = eval(code);
  
-      	if (typeof result !== "string") return result = require("util").inspect(evaled);
+      	if (typeof result !== "string") return result = require("util").inspect(result);
  
       	result = clean(result)
     } catch (err) {
