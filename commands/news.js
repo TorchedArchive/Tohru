@@ -15,6 +15,9 @@ exports.run = (tohru, msg, args) => {
                 text: `Requested by ${msg.author.username}#${msg.author.discriminator}`
             }
 		}})
+	} else {
+		if(msg.author.id !== "439373663905513473") return msg.channel.createMessage("☁️ Only my master can run this command.")
+		fs.writeFileSync("./src/news.txt", args[0])
 	}
 }
 
