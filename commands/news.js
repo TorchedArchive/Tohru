@@ -1,15 +1,15 @@
 exports.run = (tohru, msg, args) => {
 	const fs = require("fs")
-	const news = fs.readFileSync("../src/news.txt")
+	const news = fs.readFileSync("./src/news.txt")
 	if(!args[0]) {
 		msg.channel.createMessage({embed: {
-			color: 0x0, 
+			color: 0xFAB41D, 
 			author: {
 				name: "Tohru - News",
 				icon_url: tohru.user.avatarURL
 			},
 			description: "These are my latest changes!\n\n" +
-						 `${news.toString()}`
+						 `\`${news.toString()}\``
 		}})
 	}
 }
