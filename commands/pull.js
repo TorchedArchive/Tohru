@@ -19,12 +19,6 @@ exports.run = (tohru, msg) => {
 				}
 			]
 		}})
-		if(stderr) {
-			msg.channel.createMessage("Restarting...")
-			setTimeout(() => {
-				cp.execSync("pm2 restart Tohru")
-			}, 2000)
-		}
 	})
 }
 
