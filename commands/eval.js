@@ -18,7 +18,10 @@ exports.run = (tohru, msg, args) => {
 				"name": "Output",
 				"value": `\`\`\`js\n${result}\n\`\`\``
 			}
-		]
+		],
+		footer: {
+            text: `Requested by ${msg.author.username}#${msg.author.discriminator}`
+        }
 	}})
 
 	function clean(text) {

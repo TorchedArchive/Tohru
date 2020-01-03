@@ -7,7 +7,10 @@ exports.run = (tohru, msg) => {
 			description: ">w< a cat!!",
 			image: {
 				url: i.file
-			}
+			},
+			footer: {
+                text: `Requested by ${msg.author.username}#${msg.author.discriminator}`
+            }
 		}})
 	})
 }
