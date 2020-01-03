@@ -9,7 +9,11 @@ exports.run = (tohru, msg, args) => {
 				icon_url: tohru.user.avatarURL
 			},
 			description: "These are my latest changes!\n\n" +
-						 `\`${news.toString()}\``
+						 `\`${news.toString()}\``,
+
+            footer: {
+                text: `Requested by ${msg.author.username}#${msg.author.discriminator}`
+            }
 		}})
 	}
 }

@@ -14,7 +14,7 @@ exports.run = (tohru, msg) => {
                         url: d.url
                     },
                     footer: {
-                        text: `Powered by https://nekos.life| Requested by ${msg.author.username}#${msg.author.discriminator}`
+                        text: `Powered by https://nekos.life | Requested by ${msg.author.username}#${msg.author.discriminator}`
                     }
                 }})
             })
