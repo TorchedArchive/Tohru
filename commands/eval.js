@@ -25,7 +25,7 @@ exports.run = (tohru, msg, args) => {
 			fields: [
 				{
 					"name": "Output",
-					"value": `\`\`\`js\n${result}\n\`\`\``
+					"value": `\`\`\`js\n${err}\n\`\`\``
 				}
 			],
 			footer: {
