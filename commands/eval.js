@@ -1,14 +1,15 @@
 exports.run = (tohru, msg, args) => {
 	let result;
+	let res;
     try {
  		const code = args.join(" ");
       	result = eval(code);
  
-      	if (typeof result !== "string") return result = require("util").inspect(result);
+      	if (typeof result !== "string") return res = require("util").inspect(result);
  
-      	result = clean(result)
+      	res = clean(result)
     } catch (err) {
-    	result = err;
+    	res = err;
 	}
 	msg.channel.createMessage({embed: {
 		color: 0xFAB41D,
