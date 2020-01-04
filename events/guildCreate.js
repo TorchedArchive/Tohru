@@ -5,9 +5,7 @@ module.exports = (tohru, g) => {
 		embeds: [
 			{
 				"color": 0x92fc65,
-				"description": `**Name:** \`${g.name}\`
-				**Members:** \`${g.memberCount}\`
-				Owner: ${gowner.username}#${gowner.discriminator}`
+				"description": `**Name:** \`${g.name}\`\n**Members:** \`${g.memberCount}\`\n**Owner:** \`${gowner.username}#${gowner.discriminator}\``
 			}
 		]
 	})
