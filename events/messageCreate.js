@@ -9,6 +9,9 @@ module.exports = (tohru, msg) => {
         if(mssg.startsWith(tprefix)) prefix = tprefix;
     }
 
+    if(msg.content === `<@${tohru.user.id}>` || `<@${tohru.user.id}>`) {
+        msg.channel.createMessage("👋 Hello~! My name is Tohru, and I am your helpful dragon maid!\nIf you want to start using my commands, type `tohru help` to see all of them. If you want to join my master's server, use `tohru invite`. And if you ever forget my prefix, just mention me again!")
+    }
     if(!prefix) return;
 
     const args = msg.content.slice(prefix.length).trim().split(" ")
@@ -22,7 +25,7 @@ module.exports = (tohru, msg) => {
         } else {
             return;
         }
-        if(cmd.config.ownerOnly && msg.author.id !== "439373663905513473") return msg.channel.createMessage("☁️ Only my master can run this command.")
+        if(msg.author.id !== "439373663905513473") return;
         cmd.run(tohru, msg, args)
     } catch(err) {
         console.log(err)
