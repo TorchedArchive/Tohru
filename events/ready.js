@@ -5,6 +5,6 @@ module.exports = (tohru) => {
     	type: 3
     })
     tohru.executeWebhook("663078839907254312", require("../config.json").webhook.tohru, {
-    	content: "I am now up, and ready to be your dragon maid!"
+    	content: "✅ I am now up, and ready to be your dragon maid!"
     })
 }
