@@ -9,9 +9,9 @@ module.exports = (tohru, msg) => {
         if(mssg.startsWith(tprefix)) prefix = tprefix;
     }
 
-    /* if(msg.content === `<@${tohru.user.id}>` || `<@${tohru.user.id}>`) {
+    if(msg.content === `<@!${tohru.user.id}>` || msg.content === `<@${tohru.user.id}>`) {
         msg.channel.createMessage("👋 Hello~! My name is Tohru, and I am your helpful dragon maid!\nIf you want to start using my commands, type `tohru help` to see all of them. If you want to join my master's server, use `tohru invite`. And if you ever forget my prefix, just mention me again!")
-    } */
+    } 
     if(!prefix) return;
 
     const args = msg.content.slice(prefix.length).trim().split(" ")
