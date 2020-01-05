@@ -25,7 +25,7 @@ module.exports = (tohru, msg) => {
         } else {
             return;
         }
-        if(cmd.config.ownerOnly && msg.author.id !== "439373663905513473") return msg.channel.createMessage("☁️ This command is for my master only.)
+        if(cmd.config.ownerOnly && msg.author.id !== "439373663905513473") return msg.channel.createMessage("☁️ This command is for my master only.")
         cmd.run(tohru, msg, args)
     } catch(err) {
         console.log(err)
