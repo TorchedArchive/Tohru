@@ -1,2 +1,2 @@
-# Destiny
-A JavaScript boilerplate for me to use for all my future bots.
+# Tohru
+Some dumb little weeb bot I decided to make. Ultimately lost motivation.
