@@ -23,7 +23,7 @@ exports.run = (tohru, msg, args) => {
 }
 
 exports.config = {
-	aliases: ["upates"]
+	aliases: ["updates"]
 }
 
 exports.help = {
