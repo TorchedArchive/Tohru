@@ -1,6 +1,6 @@
 /* 
     Destiny, a JavaScript boilerplate/bot template for me to use for my future bots.
-    Copyright (C) 2019 SamuraiStacks
+    Copyright (C) 2019 TorchedSammy
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,9 +16,6 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// How we will be interacting with the Discord API,
-// with Eris. Discord.js takes too much RAM and you 
-// need to heavily modify it to be efficient.
 const Eris = require("eris")
 const config = require("./config.json")
 const { WeebuClient } =  require("./src/structures/WeebuClient.js")
@@ -27,8 +24,6 @@ const tohru = new Eris(config.token)
 // Here is our custom and cool extended Map class!!
 const FancyMap = require("./src/structures/FancyMap.js")
 
-// We will be using cat-loggr to log, because
-// it looks nice and I really like it.
 const CatLoggr = require("cat-loggr")
 tohru.loggr = new CatLoggr({
     levels: [
